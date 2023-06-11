@@ -1,0 +1,6 @@
+fastai
+fastapi
+uvicorn
+skimage
+numpy
+urllib
