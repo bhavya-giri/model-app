@@ -35,7 +35,3 @@ async def get_net_image_prediction(image_link: str = ""):
     pred, idx, prob = learn.predict(PILImage.create(urlopen(image_link)))
     return {"predcition": pred, "probability": float(prob[0])}
 
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    run(app, host="0.0.0.0", port=port)
