@@ -33,5 +33,5 @@ async def get_net_image_prediction(image_link: str = ""):
     if image_link == "":
         return {"message": "No image link provided"}
     pred, idx, prob = learn.predict(PILImage.create(urlopen(image_link)))
-    return {"predcition": pred, "probability": float(prob[0])}
+    return {"prediction": pred, "probability": float(prob[0])}
 
